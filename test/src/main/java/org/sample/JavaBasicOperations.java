@@ -31,6 +31,7 @@
 
 package org.sample;
 
+import java.math.BigDecimal;
 import org.openjdk.jmh.annotations.Benchmark;
 
 public class JavaBasicOperations {
@@ -88,17 +89,39 @@ public class JavaBasicOperations {
 
     @Benchmark
     public int simpleIntMath() {
-        return 1 + 2 * 3 / 4 - 5;
+        return (1 + 2) * 3 / 4 - 5;
     }
 
     @Benchmark
     public double simpleDoubleMath() {
-        return 1.0 + 2.0 * 3.0 / 4.0 - 5.0;
+        return (1.0 + 2.0) * 3.0 / 4.0 - 5.0;
     }
 
     @Benchmark
-    public void complexMath() {
-        Math.sin(Math.tan(Math.sqrt(Math.PI)));
+    public BigDecimal simpleBigDecimalMath() {
+        BigDecimal ret = BigDecimal.valueOf(1.0)
+            .add(BigDecimal.valueOf(2.0))
+            .multiply(BigDecimal.valueOf(3.0))
+            .divide(BigDecimal.valueOf(4.0))
+            .subtract(BigDecimal.valueOf(5.0));
+        return ret;
+    }
+
+    @Benchmark
+    public double[] complexMathWithSqrt() {
+        double a = 2.3, b = 4, c = 5.6;
+        double determinant = b * b - 4 * a * c;
+        double root1 = (-b + Math.sqrt(determinant)) / (2 * a);
+        double root2 = (-b - Math.sqrt(determinant)) / (2 * a);
+        return new double[]{root1, root2};
+    }
+
+    @Benchmark
+    public int complexMathWithTrig() {
+        double i = Math.PI - 1;
+        double a = Math.sin(i) / Math.cos(i);
+        double b = Math.tan(i);
+        return Double.compare(a, b);
     }
 
     @Benchmark

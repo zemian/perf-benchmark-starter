@@ -11,12 +11,12 @@
 
 # Run progress: 0.00% complete, ETA 00:04:20
 # Fork: 1 of 1
-# Warmup Iteration   1: 7149156.824 ops/s
-Iteration   1: 12648574.985 ops/s
+# Warmup Iteration   1: 7161474.180 ops/s
+Iteration   1: 12638979.112 ops/s
 
 
 Result "org.sample.JavaBasicOperations.complexMath":
-  12648574.985 ops/s
+  12638979.112 ops/s
 
 
 # JMH version: 1.21
@@ -32,12 +32,12 @@ Result "org.sample.JavaBasicOperations.complexMath":
 
 # Run progress: 7.69% complete, ETA 00:04:04
 # Fork: 1 of 1
-# Warmup Iteration   1: 4024018433.102 ops/s
-Iteration   1: 4022630057.134 ops/s
+# Warmup Iteration   1: 3912783015.485 ops/s
+Iteration   1: 4023735696.812 ops/s
 
 
 Result "org.sample.JavaBasicOperations.emptyMethod":
-  4022630057.134 ops/s
+  4023735696.812 ops/s
 
 
 # JMH version: 1.21
@@ -53,12 +53,12 @@ Result "org.sample.JavaBasicOperations.emptyMethod":
 
 # Run progress: 15.38% complete, ETA 00:03:43
 # Fork: 1 of 1
-# Warmup Iteration   1: 4040470909.777 ops/s
-Iteration   1: 4039117903.226 ops/s
+# Warmup Iteration   1: 445194773.082 ops/s
+Iteration   1: 450636317.125 ops/s
 
 
 Result "org.sample.JavaBasicOperations.for1000Loop":
-  4039117903.226 ops/s
+  450636317.125 ops/s
 
 
 # JMH version: 1.21
@@ -74,12 +74,12 @@ Result "org.sample.JavaBasicOperations.for1000Loop":
 
 # Run progress: 23.08% complete, ETA 00:03:23
 # Fork: 1 of 1
-# Warmup Iteration   1: 60877542.442 ops/s
-Iteration   1: 60950879.859 ops/s
+# Warmup Iteration   1: 59447974.850 ops/s
+Iteration   1: 59564690.387 ops/s
 
 
 Result "org.sample.JavaBasicOperations.ifStatementWithBooleanParse":
-  60950879.859 ops/s
+  59564690.387 ops/s
 
 
 # JMH version: 1.21
@@ -93,14 +93,14 @@ Result "org.sample.JavaBasicOperations.ifStatementWithBooleanParse":
 # Benchmark mode: Throughput, ops/time
 # Benchmark: org.sample.JavaBasicOperations.newArray
 
-# Run progress: 30.77% complete, ETA 00:03:02
+# Run progress: 30.77% complete, ETA 00:03:03
 # Fork: 1 of 1
-# Warmup Iteration   1: 4041067792.961 ops/s
-Iteration   1: 4041183843.185 ops/s
+# Warmup Iteration   1: 217065757.972 ops/s
+Iteration   1: 228759279.807 ops/s
 
 
 Result "org.sample.JavaBasicOperations.newArray":
-  4041183843.185 ops/s
+  228759279.807 ops/s
 
 
 # JMH version: 1.21
@@ -116,12 +116,12 @@ Result "org.sample.JavaBasicOperations.newArray":
 
 # Run progress: 38.46% complete, ETA 00:02:42
 # Fork: 1 of 1
-# Warmup Iteration   1: 4028184122.734 ops/s
-Iteration   1: 4027938858.038 ops/s
+# Warmup Iteration   1: 214649591.938 ops/s
+Iteration   1: 228988923.831 ops/s
 
 
 Result "org.sample.JavaBasicOperations.newInstance":
-  4027938858.038 ops/s
+  228988923.831 ops/s
 
 
 # JMH version: 1.21
@@ -137,12 +137,12 @@ Result "org.sample.JavaBasicOperations.newInstance":
 
 # Run progress: 46.15% complete, ETA 00:02:22
 # Fork: 1 of 1
-# Warmup Iteration   1: 4015210164.706 ops/s
-Iteration   1: 4027482678.715 ops/s
+# Warmup Iteration   1: 449775446.899 ops/s
+Iteration   1: 451441749.534 ops/s
 
 
 Result "org.sample.JavaBasicOperations.newInstanceAndCallMethod":
-  4027482678.715 ops/s
+  451441749.534 ops/s
 
 
 # JMH version: 1.21
@@ -156,14 +156,14 @@ Result "org.sample.JavaBasicOperations.newInstanceAndCallMethod":
 # Benchmark mode: Throughput, ops/time
 # Benchmark: org.sample.JavaBasicOperations.parseBoolean
 
-# Run progress: 53.85% complete, ETA 00:02:01
+# Run progress: 53.85% complete, ETA 00:02:02
 # Fork: 1 of 1
-# Warmup Iteration   1: 4047683365.098 ops/s
-Iteration   1: 4030570201.095 ops/s
+# Warmup Iteration   1: 449033628.665 ops/s
+Iteration   1: 451348082.520 ops/s
 
 
 Result "org.sample.JavaBasicOperations.parseBoolean":
-  4030570201.095 ops/s
+  451348082.520 ops/s
 
 
 # JMH version: 1.21
@@ -179,12 +179,12 @@ Result "org.sample.JavaBasicOperations.parseBoolean":
 
 # Run progress: 61.54% complete, ETA 00:01:41
 # Fork: 1 of 1
-# Warmup Iteration   1: 30928916.652 ops/s
-Iteration   1: 31190760.715 ops/s
+# Warmup Iteration   1: 28320218.423 ops/s
+Iteration   1: 28644655.885 ops/s
 
 
 Result "org.sample.JavaBasicOperations.parseDouble":
-  31190760.715 ops/s
+  28644655.885 ops/s
 
 
 # JMH version: 1.21
@@ -200,12 +200,12 @@ Result "org.sample.JavaBasicOperations.parseDouble":
 
 # Run progress: 69.23% complete, ETA 00:01:21
 # Fork: 1 of 1
-# Warmup Iteration   1: 488315538.561 ops/s
-Iteration   1: 488828700.051 ops/s
+# Warmup Iteration   1: 213719784.756 ops/s
+Iteration   1: 213716990.567 ops/s
 
 
 Result "org.sample.JavaBasicOperations.parseInteger":
-  488828700.051 ops/s
+  213716990.567 ops/s
 
 
 # JMH version: 1.21
@@ -219,14 +219,14 @@ Result "org.sample.JavaBasicOperations.parseInteger":
 # Benchmark mode: Throughput, ops/time
 # Benchmark: org.sample.JavaBasicOperations.simpleDoubleMath
 
-# Run progress: 76.92% complete, ETA 00:01:00
+# Run progress: 76.92% complete, ETA 00:01:01
 # Fork: 1 of 1
-# Warmup Iteration   1: 4034482701.393 ops/s
-Iteration   1: 4020737072.076 ops/s
+# Warmup Iteration   1: 405909997.736 ops/s
+Iteration   1: 426269645.240 ops/s
 
 
 Result "org.sample.JavaBasicOperations.simpleDoubleMath":
-  4020737072.076 ops/s
+  426269645.240 ops/s
 
 
 # JMH version: 1.21
@@ -242,12 +242,12 @@ Result "org.sample.JavaBasicOperations.simpleDoubleMath":
 
 # Run progress: 84.62% complete, ETA 00:00:40
 # Fork: 1 of 1
-# Warmup Iteration   1: 4025455101.228 ops/s
-Iteration   1: 4045455494.770 ops/s
+# Warmup Iteration   1: 449897039.922 ops/s
+Iteration   1: 450770981.879 ops/s
 
 
 Result "org.sample.JavaBasicOperations.simpleIntMath":
-  4045455494.770 ops/s
+  450770981.879 ops/s
 
 
 # JMH version: 1.21
@@ -263,12 +263,12 @@ Result "org.sample.JavaBasicOperations.simpleIntMath":
 
 # Run progress: 92.31% complete, ETA 00:00:20
 # Fork: 1 of 1
-# Warmup Iteration   1: 4033862047.245 ops/s
-Iteration   1: 4035010921.685 ops/s
+# Warmup Iteration   1: 449591288.776 ops/s
+Iteration   1: 451727216.255 ops/s
 
 
 Result "org.sample.JavaBasicOperations.while1000Loop":
-  4035010921.685 ops/s
+  451727216.255 ops/s
 
 
 # Run complete. Total time: 00:04:24
@@ -280,16 +280,16 @@ the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from th
 Do not assume the numbers tell you what you want them to tell.
 
 Benchmark                                         Mode  Cnt           Score   Error  Units
-JavaBasicOperations.complexMath                  thrpt         12648574.985          ops/s
-JavaBasicOperations.emptyMethod                  thrpt       4022630057.134          ops/s
-JavaBasicOperations.for1000Loop                  thrpt       4039117903.226          ops/s
-JavaBasicOperations.ifStatementWithBooleanParse  thrpt         60950879.859          ops/s
-JavaBasicOperations.newArray                     thrpt       4041183843.185          ops/s
-JavaBasicOperations.newInstance                  thrpt       4027938858.038          ops/s
-JavaBasicOperations.newInstanceAndCallMethod     thrpt       4027482678.715          ops/s
-JavaBasicOperations.parseBoolean                 thrpt       4030570201.095          ops/s
-JavaBasicOperations.parseDouble                  thrpt         31190760.715          ops/s
-JavaBasicOperations.parseInteger                 thrpt        488828700.051          ops/s
-JavaBasicOperations.simpleDoubleMath             thrpt       4020737072.076          ops/s
-JavaBasicOperations.simpleIntMath                thrpt       4045455494.770          ops/s
-JavaBasicOperations.while1000Loop                thrpt       4035010921.685          ops/s
+JavaBasicOperations.complexMath                  thrpt         12638979.112          ops/s
+JavaBasicOperations.emptyMethod                  thrpt       4023735696.812          ops/s
+JavaBasicOperations.for1000Loop                  thrpt        450636317.125          ops/s
+JavaBasicOperations.ifStatementWithBooleanParse  thrpt         59564690.387          ops/s
+JavaBasicOperations.newArray                     thrpt        228759279.807          ops/s
+JavaBasicOperations.newInstance                  thrpt        228988923.831          ops/s
+JavaBasicOperations.newInstanceAndCallMethod     thrpt        451441749.534          ops/s
+JavaBasicOperations.parseBoolean                 thrpt        451348082.520          ops/s
+JavaBasicOperations.parseDouble                  thrpt         28644655.885          ops/s
+JavaBasicOperations.parseInteger                 thrpt        213716990.567          ops/s
+JavaBasicOperations.simpleDoubleMath             thrpt        426269645.240          ops/s
+JavaBasicOperations.simpleIntMath                thrpt        450770981.879          ops/s
+JavaBasicOperations.while1000Loop                thrpt        451727216.255          ops/s

@@ -19,7 +19,7 @@ mvn package
 java -jar target/benchmarks.jar
 
 # Or to have a quick run and save the report
-java -jar target/benchmarks.jar -f 1 -wi 1 -i 1 -o ../reports/benchmarks-$(uname -s)_$(date +%Y%m%d%H%M%S).txt
+java -jar target/benchmarks.jar -f 1 -wi 1 -i 1 -o target/benchmarks-$(uname -s)_$(date +%Y%m%d%H%M%S).txt
 ----
 
 The default `test/src/main/java/org/sample/MyBenchmark.java` generated above will test and measure an empty Java method invocation.
@@ -34,15 +34,10 @@ See related links
 * https://github.com/nilskp/jmh-charts
 * https://github.com/akarnokd/jmh-compare-gui
 * https://plugins.jenkins.io/jmh-report
+* https://github.com/Valloric/jmh-playground
 
 == Other Perf Tools
 
 * https://www.spf4j.org/
 * https://github.com/google/caliper
 * https://github.com/torvalds/linux/blob/master/tools/perf/Documentation/perf-bench.txt
-
-== How to collect reports on various systems
-
-----
-java -jar test/dist/benchmarks.jar | tee reports/test-$(uname -s)_$(date +%s).txt
-----
