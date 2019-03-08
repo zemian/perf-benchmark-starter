@@ -36,6 +36,8 @@ import org.openjdk.jmh.annotations.Benchmark;
 
 public class JavaBasicOperations {
     public static class Foo {
+        int count = 0;
+        int getCount() { return ++count; }
         int hello() {
             return 0;
         }
@@ -58,6 +60,11 @@ public class JavaBasicOperations {
     @Benchmark
     public int newInstanceAndCallMethod() {
         return new Foo().hello();
+    }
+
+    @Benchmark
+    public int newInstanceAndFieldAccess() {
+        return new Foo().getCount();
     }
 
     @Benchmark
