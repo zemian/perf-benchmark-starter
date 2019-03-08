@@ -35,3 +35,9 @@ See related links
 * https://www.spf4j.org/
 * https://github.com/google/caliper
 * https://github.com/torvalds/linux/blob/master/tools/perf/Documentation/perf-bench.txt
+
+== How to collect reports on various systems
+
+----
+java test/dist/benchmark.jar | tee reports/test-$(uname -s)_$(date +%s).txt
+----
