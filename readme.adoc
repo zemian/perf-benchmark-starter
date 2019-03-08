@@ -39,5 +39,5 @@ See related links
 == How to collect reports on various systems
 
 ----
-java test/dist/benchmark.jar | tee reports/test-$(uname -s)_$(date +%s).txt
+java -jar test/dist/benchmarks.jar | tee reports/test-$(uname -s)_$(date +%s).txt
 ----
