@@ -1,4 +1,4 @@
-package zemian.oshi;
+package zemian.app;
 
 // This is base on oshi.SystemInfoTest.java
 
