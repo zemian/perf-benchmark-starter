@@ -168,4 +168,9 @@ public class JavaBasicOperations {
     public String[] stringSplit() {
         return "a b c d e f".split(" ");
     }
+
+    @Benchmark
+    public String stringJoin() {
+        return String.join(" ", new String[]{"a", "b", "c", "d", "e", "f"});
+    }
 }
