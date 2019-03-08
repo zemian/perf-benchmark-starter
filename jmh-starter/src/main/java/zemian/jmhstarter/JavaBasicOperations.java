@@ -145,4 +145,27 @@ public class JavaBasicOperations {
     public double parseDouble() {
         return Double.parseDouble("0.399999");
     }
+
+    @Benchmark
+    public String stringConcat() {
+        String ret = "";
+        for (int i = 0; i < 1000; i++) {
+            ret = ret + ("" + i);
+        }
+        return ret;
+    }
+
+    @Benchmark
+    public String stringBuilderAppend() {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < 1000; i++) {
+            sb.append("").append(i);
+        }
+        return sb.toString();
+    }
+
+    @Benchmark
+    public String[] stringSplit() {
+        return "a b c d e f".split(" ");
+    }
 }
