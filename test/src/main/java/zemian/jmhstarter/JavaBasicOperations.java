@@ -29,7 +29,7 @@
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package org.sample;
+package zemian.jmhstarter;
 
 import java.math.BigDecimal;
 import org.openjdk.jmh.annotations.Benchmark;
