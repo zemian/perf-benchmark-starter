@@ -19,6 +19,8 @@ mvn clean install
 java -jar target/benchmarks.jar
 ----
 
+The default `test/src/main/java/org/sample/MyBenchmark.java` generated above will test and measure an empty Java method invocation.
+
 NOTE: A copy of binary is saved under `test/dist/benchmarks.jar`
 
 See related links
