@@ -15,8 +15,11 @@ mvn archetype:generate \
           -DartifactId=test \
           -Dversion=1.0
 cd test
-mvn clean install
+mvn package
 java -jar target/benchmarks.jar
+
+# Or to have a quick run and save the report
+java -jar target/benchmarks.jar -f 1 -wi 1 -i 1 -o ../reports/benchmarks-$(uname -s)_$(date +%Y%m%d%H%M%S).txt
 ----
 
 The default `test/src/main/java/org/sample/MyBenchmark.java` generated above will test and measure an empty Java method invocation.

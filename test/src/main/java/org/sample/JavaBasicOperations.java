@@ -33,12 +33,82 @@ package org.sample;
 
 import org.openjdk.jmh.annotations.Benchmark;
 
-public class MyBenchmark {
-
-    @Benchmark
-    public void testMethod() {
-        // This is a demo/sample template for building your JMH benchmarks. Edit as needed.
-        // Put your benchmark code here.
+public class JavaBasicOperations {
+    public static class Foo {
+        void hello() {
+            // Do nothing
+        }
     }
 
+    @Benchmark
+    public void emptyMethod() {
+    }
+
+    @Benchmark
+    public void newInstance() {
+        new Foo();
+    }
+
+    @Benchmark
+    public void newArray() {
+        Foo a[] = new Foo[1];
+    }
+
+    @Benchmark
+    public void newInstanceAndCallMethod() {
+        new Foo().hello();
+    }
+
+    @Benchmark
+    public void ifStatementWithBooleanParse() {
+        boolean ifStatementFlag = Boolean.parseBoolean(System.getProperty("ifStatementFlag", "true"));
+        if (ifStatementFlag) {
+            // do nothing.
+        }
+    }
+
+    @Benchmark
+    public void for1000Loop() {
+        for (int i = 0; i < 1000; i++) {
+            // Do nothing
+        }
+    }
+
+    @Benchmark
+    public void while1000Loop() {
+        int count = 0;
+        while (count < 1000) {
+            count++;
+        }
+    }
+
+    @Benchmark
+    public void simpleIntMath() {
+        int a = 1 + 2 * 3 / 4 - 5;
+    }
+
+    @Benchmark
+    public void simpleDoubleMath() {
+        double a = 1.0 + 2.0 * 3.0 / 4.0 - 5.0;
+    }
+
+    @Benchmark
+    public void complexMath() {
+        Math.sin(Math.tan(Math.sqrt(Math.PI)));
+    }
+
+    @Benchmark
+    public void parseBoolean() {
+        Boolean.parseBoolean("true");
+    }
+
+    @Benchmark
+    public void parseInteger() {
+        Integer.parseInt("99");
+    }
+
+    @Benchmark
+    public void parseDouble() {
+        Double.parseDouble("0.399999");
+    }
 }
