@@ -6,6 +6,11 @@ JMH is a Java harness for building, running, and analysing nano/micro/milli/macr
 
 See `test/readme.adoc` java project
 
+== System Information Collection Tools
+
+* https://github.com/oshi/oshi
+
+
 == Other Perf Tools
 
 * https://www.spf4j.org/
