@@ -82,6 +82,7 @@ THE POSSIBILITY OF SUCH DAMAGE.
         <!--
             Java source/target to use for compilation.
           -->
+        <javac.source>1.8</javac.source>
         <javac.target>1.8</javac.target>
 
         <!--
