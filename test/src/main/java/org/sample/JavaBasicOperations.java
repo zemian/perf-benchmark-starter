@@ -35,8 +35,8 @@ import org.openjdk.jmh.annotations.Benchmark;
 
 public class JavaBasicOperations {
     public static class Foo {
-        void hello() {
-            // Do nothing
+        int hello() {
+            return 0;
         }
     }
 
@@ -45,51 +45,55 @@ public class JavaBasicOperations {
     }
 
     @Benchmark
-    public void newInstance() {
-        new Foo();
+    public Foo newInstance() {
+        return new Foo();
     }
 
     @Benchmark
-    public void newArray() {
-        Foo a[] = new Foo[1];
+    public Foo[] newArray() {
+        return new Foo[1];
     }
 
     @Benchmark
-    public void newInstanceAndCallMethod() {
-        new Foo().hello();
+    public int newInstanceAndCallMethod() {
+        return new Foo().hello();
     }
 
     @Benchmark
-    public void ifStatementWithBooleanParse() {
+    public int ifStatementWithBooleanParse() {
         boolean ifStatementFlag = Boolean.parseBoolean(System.getProperty("ifStatementFlag", "true"));
         if (ifStatementFlag) {
-            // do nothing.
+            return 0;
         }
+        return -1;
     }
 
     @Benchmark
-    public void for1000Loop() {
+    public int for1000Loop() {
+        int c = 0;
         for (int i = 0; i < 1000; i++) {
-            // Do nothing
+            c++;
         }
+        return c;
     }
 
     @Benchmark
-    public void while1000Loop() {
-        int count = 0;
-        while (count < 1000) {
-            count++;
+    public int while1000Loop() {
+        int c = 0;
+        while (c < 1000) {
+            c++;
         }
+        return c;
     }
 
     @Benchmark
-    public void simpleIntMath() {
-        int a = 1 + 2 * 3 / 4 - 5;
+    public int simpleIntMath() {
+        return 1 + 2 * 3 / 4 - 5;
     }
 
     @Benchmark
-    public void simpleDoubleMath() {
-        double a = 1.0 + 2.0 * 3.0 / 4.0 - 5.0;
+    public double simpleDoubleMath() {
+        return 1.0 + 2.0 * 3.0 / 4.0 - 5.0;
     }
 
     @Benchmark
@@ -98,17 +102,17 @@ public class JavaBasicOperations {
     }
 
     @Benchmark
-    public void parseBoolean() {
-        Boolean.parseBoolean("true");
+    public boolean parseBoolean() {
+        return Boolean.parseBoolean("true");
     }
 
     @Benchmark
-    public void parseInteger() {
-        Integer.parseInt("99");
+    public int parseInteger() {
+        return Integer.parseInt("99");
     }
 
     @Benchmark
-    public void parseDouble() {
-        Double.parseDouble("0.399999");
+    public double parseDouble() {
+        return Double.parseDouble("0.399999");
     }
 }
