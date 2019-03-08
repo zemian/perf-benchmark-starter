@@ -33,3 +33,8 @@ java -jar target/benchmarks.jar -f 1 -wi 1 -i 1 -o target/benchmarks-$(uname -s)
 * https://github.com/akarnokd/jmh-compare-gui
 * https://plugins.jenkins.io/jmh-report
 * https://github.com/Valloric/jmh-playground
+
+== PrintSystemInfo
+
+  java -cp target/benchmarks.jar zemian.oshi.PrintSystemInfo
+  
