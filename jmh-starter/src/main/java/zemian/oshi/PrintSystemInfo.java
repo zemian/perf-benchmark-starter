@@ -96,14 +96,14 @@ public class PrintSystemInfo {
     LOG.info("Checking CPU...");
     printCpu(hal.getProcessor());
 
-    LOG.info("Checking Processes...");
-    printProcesses(os, hal.getMemory());
+//    LOG.info("Checking Processes...");
+//    printProcesses(os, hal.getMemory());
 
     LOG.info("Checking Sensors...");
     printSensors(hal.getSensors());
 
-    LOG.info("Checking Power sources...");
-    printPowerSources(hal.getPowerSources());
+//    LOG.info("Checking Power sources...");
+//    printPowerSources(hal.getPowerSources());
 
     LOG.info("Checking Disks...");
     printDisks(hal.getDiskStores());
@@ -114,16 +114,16 @@ public class PrintSystemInfo {
     LOG.info("Checking Network interfaces...");
     printNetworkInterfaces(hal.getNetworkIFs());
 
-    LOG.info("Checking Network parameterss...");
-    printNetworkParameters(os.getNetworkParams());
+//    LOG.info("Checking Network parameterss...");
+//    printNetworkParameters(os.getNetworkParams());
 
     // hardware: displays
     LOG.info("Checking Displays...");
     printDisplays(hal.getDisplays());
 
-    // hardware: USB devices
-    LOG.info("Checking USB Devices...");
-    printUsbDevices(hal.getUsbDevices(true));
+//    // hardware: USB devices
+//    LOG.info("Checking USB Devices...");
+//    printUsbDevices(hal.getUsbDevices(true));
 
     LOG.info("Checking Sound Cards...");
     printSoundCards(hal.getSoundCards());
