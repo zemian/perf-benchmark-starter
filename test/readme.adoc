@@ -1,0 +1,35 @@
+JMH is a Java harness for building, running, and analysing nano/micro/milli/macro benchmarks written in Java and other languages targetting the JVM.
+
+https://openjdk.java.net/projects/code-tools/jmh/
+
+----
+mvn archetype:generate \
+          -DinteractiveMode=false \
+          -DarchetypeGroupId=org.openjdk.jmh \
+          -DarchetypeArtifactId=jmh-java-benchmark-archetype \
+          -DgroupId=org.sample \
+          -DartifactId=test \
+          -Dversion=1.0
+----
+
+== Running Benchmarks
+
+----
+cd test
+mvn package
+java -jar target/benchmarks.jar
+
+# Or to have a quick run and save the report
+java -jar target/benchmarks.jar -f 1 -wi 1 -i 1 -o target/benchmarks-$(uname -s)_$(date +%Y%m%d%H%M%S).txt
+----
+
+
+== Related links
+
+* https://openjdk.java.net/projects/code-tools/jmh/
+* https://www.baeldung.com/java-microbenchmark-harness
+* https://antoniogoncalves.org/2015/01/15/micro-benchmarking-with-jmh-measure-dont-guess/
+* https://github.com/nilskp/jmh-charts
+* https://github.com/akarnokd/jmh-compare-gui
+* https://plugins.jenkins.io/jmh-report
+* https://github.com/Valloric/jmh-playground
