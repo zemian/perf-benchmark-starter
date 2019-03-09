@@ -28,7 +28,6 @@ java -jar target/benchmarks.jar -f 1 -wi 1 -i 1 -o target/benchmarks-$(uname -s)
 
 * https://openjdk.java.net/projects/code-tools/jmh/
 * https://www.baeldung.com/java-microbenchmark-harness
-* https://antoniogoncalves.org/2015/01/15/micro-benchmarking-with-jmh-measure-dont-guess/
 * https://github.com/nilskp/jmh-charts
 * https://github.com/akarnokd/jmh-compare-gui
 * https://plugins.jenkins.io/jmh-report
